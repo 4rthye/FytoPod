@@ -1,3 +1,4 @@
+<img width="2400" height="750" alt="model_comparison_bars png" src="https://github.com/user-attachments/assets/7f6b2702-8174-41b2-9219-155f9693cbef" />
 # FytoPod 🌿
 ### Multimodal Plant Health Intelligence Using Predictive Analytics and Explainable Deep Learning
 
@@ -68,8 +69,10 @@ a Gradio demo and FastAPI backend.
 | Random Forest | 85% | 0.92 |
 | **LSTM (FytoPod)** | **95%** | **0.93** |
 
-![Model Comparison](docs/results/sensor/model_comparison.png)
-![Confusion Matrix Comparison](docs/results/sensor/confusion_matrix.png)
+Model Comparison
+<img width="2100" height="900" alt="model_comparison" src="https://github.com/user-attachments/assets/2116f908-a245-4327-bd9e-553424ab4289" />
+
+
 
 ### CNN Disease Detection
 
@@ -81,26 +84,42 @@ a Gradio demo and FastAPI backend.
 | Macro F1-score | 0.98 |
 | Weighted F1-score | 0.98 |
 
-![CNN Confusion Matrix](docs/results/vision/confusion_matrix.png)
-![Per Class F1](docs/results/vision/per_class_f1.png)
+Confusion Matrix Comparison
+<img width="1841" height="1790" alt="confusion_matrix png" src="https://github.com/user-attachments/assets/f1024c1e-5c04-474d-a21c-04e0e4024846" />
+
+Per Class F1
+<img width="1238" height="553" alt="per_class_f1" src="https://github.com/user-attachments/assets/9f8c01f1-67f2-4572-aa85-60e073b9171c" />
+
 
 ### Grad-CAM Explainability
 
-![Grad-CAM](docs/results/vision/gradcam_output.png)
+Grad-CAM
+<img width="1350" height="2381" alt="gradcam_output png" src="https://github.com/user-attachments/assets/f9a120a6-da42-425c-8395-e70af8e2426d" />
+
 
 ### Novel Modules
 
-![Cellular Automata Spread](docs/results/vision/ca_spread_timeline.png)
-![Lifespan Predictor](docs/results/vision/lifespan_predictor.png)
-![Treatment Impact](docs/results/vision/treatment_impact.png)
+Cellular Automata Spread
+<img width="2720" height="1520" alt="ca_spread_timeline png" src="https://github.com/user-attachments/assets/eaa2f586-79a6-46c9-9807-a83c63c93874" />
+
+Lifespan Predictor
+<img width="1590" height="691" alt="lifespan_predictor png" src="https://github.com/user-attachments/assets/c17b3792-4443-43eb-a4bf-32ab2b4adc18" />
+
+Treatment Impact
+<img width="1492" height="675" alt="treatment_impact" src="https://github.com/user-attachments/assets/fb1cc31d-91b0-4e5e-8c0d-1c77349f2080" />
 
 ---
 
 ## EDA
 
-![Class Distribution](docs/results/vision/eda_class_distribution.png)
-![Sample Grid](docs/results/vision/eda_sample_grid.png)
-![Augmentation](docs/results/vision/eda_augmentation.png)
+Class Distribution
+<img width="2700" height="1800" alt="eda_class_distribution png" src="https://github.com/user-attachments/assets/07dcd9a7-1648-4c0b-8206-6ab009034e79" />
+
+Sample Grid
+<img width="1010" height="7498" alt="eda_sample_grid png" src="https://github.com/user-attachments/assets/d331a363-2b0c-454d-86c6-eae8497d73bb" />
+
+Augmentation
+<img width="2700" height="1050" alt="eda_augmentation png" src="https://github.com/user-attachments/assets/c35b9acc-7855-4a53-b3b7-7bb013ca2694" />
 
 ---
 
