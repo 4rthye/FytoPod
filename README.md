@@ -18,7 +18,7 @@ a Gradio demo and FastAPI backend.
 
 ## System Architecture
 
-![Architecture]("C:\Users\arthy\OneDrive\Desktop\final year project\fytopod\docs\architecture\fytopod_architecture.png")
+![Architecture]("<img width="2779" height="3580" alt="fytopod_architecture" src="https://github.com/user-attachments/assets/4ab19de3-f42a-47ea-a567-d4d1a6a7dacb" />")
 
 ---
 
