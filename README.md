@@ -147,3 +147,48 @@ They are available on request or via Supabase Storage.
 ---
 
 ## Project Structure
+FytoPod/
+├── app/ FastAPI backend
+├── sensor_modal/ LSTM stress prediction modules
+├── vision_modal/ CNN inference, Grad-CAM, severity
+├── novel_modules/ Spread simulation, lifespan, treatment
+├── rag_pipeline/ Groq + LLaMA 3 treatment assistant
+├── demo/ Gradio demo app
+├── database/ PostgreSQL schema
+├── notebooks/ Training notebooks (LSTM + CNN)
+├── models/ Model placeholders (weights on Supabase)
+├── data/sample/ Sample sensor CSV files
+└── docs/ Architecture diagrams + all output graphs
+
+
+---
+
+## Setup
+
+```bash
+git clone https://github.com/4rthye/FytoPod.git
+cd FytoPod
+
+python -m venv venv
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+cp .env.example .env
+# Fill in your keys in .env
+
+# Run backend
+cd app
+uvicorn main:app --reload --port 8000
+```
+
+---
+
+## Team
+
+| Name | Role |
+|---|---|
+| Arthye Sridharan | Sensor modal, RAG pipeline, novel modules, backend, database |
+| Mridul Chelladurai | CNN training, Grad-CAM, Gradio demo, Streamlit app |
+
+**Supervisor:** Dr. M.I. Jawid Nazir, SOEIT, MAHE Dubai
