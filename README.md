@@ -1,4 +1,3 @@
-<img width="2400" height="750" alt="model_comparison_bars png" src="https://github.com/user-attachments/assets/7f6b2702-8174-41b2-9219-155f9693cbef" />
 # FytoPod 🌿
 ### Multimodal Plant Health Intelligence Using Predictive Analytics and Explainable Deep Learning
 
