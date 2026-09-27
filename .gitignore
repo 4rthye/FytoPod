@@ -203,6 +203,7 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+
 # Ruff stuff:
 .ruff_cache/
 
@@ -216,3 +217,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Model files — too large for GitHub, stored on Supabase
+*.keras
+*.h5
+*.tflite
+*.pb
+*.pkl
+saved_model/
+
+# Environment
+venv/
+.env
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+
+# DS Store
+.DS_Store
