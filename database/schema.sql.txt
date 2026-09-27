@@ -1,0 +1,53 @@
+-- FytoPod PostgreSQL Schema
+
+CREATE TABLE plants (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id TEXT,
+    species TEXT NOT NULL,
+    nickname TEXT,
+    location TEXT,
+    plant_age_days INT,
+    created_at TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE TABLE sensor_readings (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    plant_id UUID REFERENCES plants(id),
+    soil_moisture FLOAT,
+    temperature FLOAT,
+    humidity FLOAT,
+    ph FLOAT,
+    light_intensity FLOAT,
+    timestamp TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE TABLE scans (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    plant_id UUID REFERENCES plants(id),
+    disease_class TEXT NOT NULL,
+    confidence FLOAT,
+    severity TEXT,
+    severity_score FLOAT,
+    sensor_health_score FLOAT,
+    unified_health_score FLOAT,
+    image_url TEXT,
+    gradcam_url TEXT,
+    scan_timestamp TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE TABLE treatments (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scan_id UUID REFERENCES scans(id),
+    treatment_text TEXT,
+    days_untreated FLOAT,
+    days_treated FLOAT,
+    spread_day0 FLOAT,
+    spread_day3 FLOAT,
+    spread_day7 FLOAT,
+    spread_day14 FLOAT,
+    created_at TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX idx_scans_plant ON scans(plant_id);
+CREATE INDEX idx_sensor_plant ON sensor_readings(plant_id);
+CREATE INDEX idx_sensor_timestamp ON sensor_readings(timestamp DESC);
