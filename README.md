@@ -118,7 +118,8 @@ Sample Grid
 <img width="1010" height="7498" alt="eda_sample_grid png" src="https://github.com/user-attachments/assets/d331a363-2b0c-454d-86c6-eae8497d73bb" />
 
 Augmentation
-<img width="2700" height="1050" alt="eda_augmentation png" src="https://github.com/user-attachments/assets/c35b9acc-7855-4a53-b3b7-7bb013ca2694" />
+<img width="3407" height="2242" alt="segmentation_lifecycle png" src="https://github.com/user-attachments/assets/00fbbe50-e844-4698-aba3-f48ea97fa402" />
+
 
 ---
 
