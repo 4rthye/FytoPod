@@ -7,7 +7,3 @@ Redistribution, modification, commercial use, or use as a basis for other projec
 is strictly prohibited without explicit written permission from the authors.
 
 For permissions or collaboration inquiries, contact: [arthye2004@gmail.com]
-
-git add LICENSE
-git commit -m "Add restrictive license"
-git push
